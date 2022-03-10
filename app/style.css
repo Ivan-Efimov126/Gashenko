@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/* Шрифты общие */
+@font-face {
+  font-family: "Montserrat-L";
+  src: url(fonts/Montserrat-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-R";
+  src: url(fonts/Montserrat-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-B";
+  src: url(fonts/Montserrat-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto-L";
+  src: url(fonts/Roboto-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto-R";
+  src: url(fonts/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto-B";
+  src: url(fonts/Roboto-Bold.ttf) format("truetype");
+}
+/* fontawesome 6 */
+@font-face {
+  font-family: "fa-solid";
+  src: url(./fonts/fa-solid-900.ttf) format("truetype");
+}
+@font-face {
+  font-family: "fa-solid";
+  src: url(./fonts/fa-brands-400.ttf) format("truetype");
+}
+ul.fontawesome {
+  list-style: none;
+}
+ul.fontawesome i {
+  font-family: "fa-solid";
+}
+
+html, body {
+  position: relative;
+  min-height: 100%;
+  font-family: "Roboto-R";
+  font-size: 10px;
+  line-height: 1;
+}
+
+/* Стили общие */
+h1, h2, h3, p, span, menu, li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: white;
+  font-family: "Montserrat-B";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h1 + p {
+  margin-bottom: 3.5rem;
+  color: white;
+  font-family: "Montserrat-R";
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #494d55;
+  font-family: "Montserrat-L";
+  font-size: 3.6rem;
+}
+h2 + p {
+  margin-bottom: 6rem;
+  color: #a2a6af;
+  font-family: "Roboto-R";
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h3 {
+  margin-bottom: 2rem;
+  color: #40babd;
+  font-family: "Montserrat-B";
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+p {
+  color: #616670;
+  font-family: "Roboto-R";
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+button {
+  width: 15rem;
+  height: 5rem;
+  color: white;
+  background: #40babd;
+  border: 1px solid #40babd;
+  border-radius: 5px;
+  font-family: "Montserrat-B";
+  font-size: 1.6rem;
+}
+
+/* классы вне контекста */
+.area-11 {
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Стили контекстные */
+header {
+  display: none;
+  min-height: 56rem;
+  color: white;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .area-10 {
+  min-height: 6rem;
+  margin: 0 0 6rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+header .area-11 {
+  margin: 0 1rem 0 0;
+}
+header .area-12 {
+  font-family: "Montserrat-B";
+  text-transform: uppercase;
+}
+header .area-13 {
+  font-family: "Montserrat-L";
+  text-transform: uppercase;
+}
+header .area-14 {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+header .area-14 li {
+  list-style: none;
+}
+header .area-14 span {
+  color: rgba(255, 255, 255, 0.65);
+  font-family: "Roboto-B";
+  font-size: 1.6rem;
+}
+header .area-14 span:hover {
+  color: white;
+  cursor: pointer;
+}
+header .area-20 {
+  max-width: 51rem;
+}
+header .area-30 {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+header.active {
+  display: block;
+}
+
+main section {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 9rem 0 3rem 0;
+}
+
+.s01 {
+  background: transparent;
+  background-size: cover;
+}
+.s01 .area-10 > div {
+  margin-bottom: 6rem;
+}
+.s01 .area-10 > div h3 {
+  margin-bottom: 0;
+  min-height: 6rem;
+}
+.s01 .area-12 {
+  max-width: 70rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.s01 .area-12 img {
+  margin: 0 1rem 1rem 1rem;
+}
+.s01 .area-13 {
+  max-width: 35rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+}
+.s01 .area-13 > div {
+  min-height: 18rem;
+}
+
+.s02 {
+  background: #40babd url("/images/map.png") no-repeat center center;
+  background-size: cover;
+}
+.s02 .area-20 {
+  max-width: 87rem;
+  margin: 0 auto;
+}
+.s02 .area-20:nth-child(odd) img {
+  margin-right: 2rem;
+}
+.s02 .area-20:nth-child(even) img {
+  margin-left: 2rem;
+}
+.s02 .area-21 {
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+}
+.s02 .area-21 blockquote {
+  max-width: 80rem;
+  padding: 2rem;
+  color: lightgoldenrodyellow;
+  background: rgba(100, 100, 100, 0.5);
+  border-radius: 1rem;
+}
+.s02 .area-21 blockquote p {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.s03 {
+  background: transparent;
+  background-size: cover;
+}
+
+.s03 .area-12 li {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.s03 .area-12 span {
+  margin-left: 1rem;
+  color: #616670;
+  font-family: "Roboto-R";
+  line-height: 1.5;
+}
+
+.s04 {
+  background: #f5f5f5;
+  background-size: cover;
+}
+.s04 .area-12 {
+  max-width: 72rem;
+  margin: 0 auto 6rem auto;
+}
+.s04 .area-13 {
+  box-sizing: border-box;
+  max-width: 45rem;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 1rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s04 .area-13 img {
+  margin-bottom: 1rem;
+  max-width: 15rem;
+}
+.s04 .area-13 .fontawesome {
+  display: flex;
+}
+.s04 .area-13 .fontawesome li {
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+
+.s05 {
+  background: transparent;
+  background-size: cover;
+}
+.s05 .area-20 {
+  margin-bottom: 2rem;
+}
+.s05 .area-20 > div {
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s05 .area-20 h3 {
+  min-height: 10rem;
+  color: white;
+}
+.s05 .area-20 span {
+  margin-bottom: 3rem;
+  font-size: 8rem;
+  color: white;
+}
+.s05 .area-20 p {
+  min-height: 6rem;
+  color: white;
+}
+.s05 .area-20 a {
+  color: white;
+  margin-bottom: 8rem;
+  font-size: 1.5rem;
+}
+.s05 .area-21 {
+  background: #75c181;
+}
+.s05 .area-22 {
+  background: #58bbee;
+}
+.s05 .area-23 {
+  background: #F8A13F;
+}
+
+.f01 {
+  padding: 10rem 0;
+  background: #494d55 url("./images/map.png") no-repeat center center;
+}
+
+.f02 {
+  padding: 2rem 0;
+  background: #26282c;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+
+  .s01 .area-13 > div {
+    min-height: 23rem;
+  }
+
+  .s03 .area-12 span {
+    font-size: 1.5rem;
+  }
+}
