@@ -1,43 +1,50 @@
-header 
+header
   display: none
+  position: relative
   min-height: 56.0rem
   color: white
   background: transparent
   background-repeat: no-repeat
   background-size: cover
-  .area-10 
-    min-height: 6.0rem
-    margin: 0 0 6.0rem 0
+  .area-10
+    margin: 2.0rem 0 6.0rem 0
+    font-size: 2.0rem
+  .area-10 > div
     display: flex
     align-items: center
     font-size: 3.0rem
-  .area-11 
+  .area-11
     margin: 0 1.0rem 0 0
-  .area-12 
+    max-width: 4.0rem
+  .area-12
     font-family: "Montserrat-B"
     text-transform: uppercase
-  .area-13 
+  .area-13
     font-family: "Montserrat-L"
     text-transform: uppercase
-  .area-14 
+  .area-14
     display: flex
     flex-grow: 1
     justify-content: space-between
-    li 
+    li
       list-style: none
-    span 
+    a
       color: rgba(255, 255, 255, 0.65)
       font-family: "Roboto-B"
       font-size: 1.6rem
-    span:hover 
+    a:hover
       color: rgba(255, 255, 255, 1.0)
       cursor: pointer
-  .area-20 
+  .area-20
     max-width: 51.0rem
-  .area-30 
+  .area-30
     display: flex
     flex-grow: 1
     justify-content: flex-end
     align-items: flex-start
-header.active 
+    img
+      position: absolute
+      top: 5.0rem
+      right: 0
+header.active
   display: block
