@@ -342,7 +342,7 @@ main section {
   text-align: center;
 }
 .s04 .area-13 p {
-  text-align: center;
+  text-align: left;
 }
 .s04 .area-13 img {
   margin-bottom: 1rem;
@@ -507,13 +507,13 @@ main section {
     padding: 0 2rem;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .s04 .area-13 h3 {
     min-height: 5rem;
   }
 
   .s04 .area-13 .fontawesome {
-    min-height: 5rem;
+    min-height: 8rem;
   }
 }
 @media (max-width: 360px) {
