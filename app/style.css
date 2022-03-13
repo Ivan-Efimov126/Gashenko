@@ -98,7 +98,7 @@ h3 {
   line-height: 1.5;
 }
 
-p {
+p, input, select {
   color: #CACACA;
   font-family: "Roboto-R";
   font-size: 1.4rem;
@@ -395,6 +395,41 @@ main section {
   padding: 10rem 0;
   background: #494d55 url("./images/map.png") no-repeat center center;
 }
+.f01 h2 {
+  color: white;
+}
+.f01 label {
+  margin: 2rem 0;
+  color: #40babd;
+  font-family: "Montserrat-B";
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.f01 input, .f01 select {
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  color: black;
+}
+.f01 #i1 tr {
+  display: flex;
+  justify-content: space-between;
+}
+.f01 #i1 tr input {
+  max-width: 22rem;
+}
+.f01 #i2 tr {
+  display: flex;
+  justify-content: space-between;
+}
+.f01 #i2 tr input {
+  min-width: 33rem;
+}
+.f01 button {
+  width: 20rem;
+  margin: 4rem 0 0 0;
+  padding: 0 2rem;
+}
 
 .f02 {
   padding: 2rem 0;
@@ -426,5 +461,31 @@ main section {
 
   .s03 .area-13 {
     justify-content: center;
+  }
+}
+@media (max-width: 550px) {
+  #i1 tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #i1 tr input {
+    min-width: 30rem;
+    margin: 0 0 2rem 0;
+  }
+
+  #i2 tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #i2 tr input {
+    min-width: 33rem;
+  }
+
+  button {
+    width: 20rem;
+    margin: 4rem 0 0 0;
+    padding: 0 2rem;
   }
 }
