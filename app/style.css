@@ -1,28 +1,20 @@
 @charset "UTF-8";
 /* Шрифты общие */
 @font-face {
-  font-family: "Montserrat-L";
-  src: url(fonts/Montserrat-Light.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Montserrat-R";
-  src: url(fonts/Montserrat-Regular.ttf) format("truetype");
-}
-@font-face {
   font-family: "Montserrat-B";
   src: url(fonts/Montserrat-Bold.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Roboto-L";
-  src: url(fonts/Roboto-Light.ttf) format("truetype");
+  font-family: "Montserrat-L";
+  src: url(fonts/Montserrat-Light.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Roboto-R";
-  src: url(fonts/Roboto-Regular.ttf) format("truetype");
+  font-family: "Montserrat-M";
+  src: url(fonts/Montserrat-Medium.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Roboto-B";
-  src: url(fonts/Roboto-Bold.ttf) format("truetype");
+  font-family: "Montserrat-R";
+  src: url(fonts/Montserrat-Regular.ttf) format("truetype");
 }
 /* fontawesome 6 */
 @font-face {
@@ -417,6 +409,10 @@ main section {
 .f01 h2 {
   color: white;
 }
+.f01 form > div {
+  display: flex;
+  flex-direction: column;
+}
 .f01 label {
   margin: 2rem 0;
   color: #40babd;
@@ -425,24 +421,12 @@ main section {
   line-height: 1;
 }
 .f01 input, .f01 select {
+  width: 80%;
+  margin: 0 auto 1rem auto;
   padding: 1rem;
   border: 2px solid black;
   border-radius: 0.5rem;
   color: black;
-}
-.f01 #i1 tr {
-  display: flex;
-  justify-content: space-between;
-}
-.f01 #i1 tr input {
-  max-width: 22rem;
-}
-.f01 #i2 tr {
-  display: flex;
-  justify-content: space-between;
-}
-.f01 #i2 tr input {
-  min-width: 33rem;
 }
 .f01 button {
   width: 20rem;
@@ -482,25 +466,6 @@ main section {
   }
 }
 @media (max-width: 550px) {
-  #i1 tr {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  #i1 tr input {
-    min-width: 30rem;
-    margin: 0 0 2rem 0;
-  }
-
-  #i2 tr {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  #i2 tr input {
-    min-width: 33rem;
-  }
-
   button {
     width: 20rem;
     margin: 4rem 0 0 0;
@@ -513,10 +478,14 @@ main section {
   }
 
   .s04 .area-13 .fontawesome {
-    min-height: 8rem;
+    min-height: 5rem;
   }
 }
 @media (max-width: 360px) {
+  .s04 .area-13 {
+    padding: 1rem;
+  }
+
   .s05 .area-20 button {
     width: 16rem;
   }
